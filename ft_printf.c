@@ -6,7 +6,7 @@
 /*   By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:00:08 by mjeyavat          #+#    #+#             */
-/*   Updated: 2021/08/18 14:10:55 by mjeyavat         ###   ########.fr       */
+/*   Updated: 2021/08/18 15:31:42 by mjeyavat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,5 @@ int	ft_printf(const char *format, ...)
 	va_start(arg, format);
 	i = checkflag(i, format, &p, arg);
 	va_end(arg);
-	free(p);
 	return (i);
 }
