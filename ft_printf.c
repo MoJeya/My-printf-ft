@@ -6,7 +6,7 @@
 /*   By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:00:08 by mjeyavat          #+#    #+#             */
-/*   Updated: 2021/08/05 16:08:32 by mjeyavat         ###   ########.fr       */
+/*   Updated: 2021/08/18 14:10:55 by mjeyavat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,13 @@ static int	checkflag(int i, const char *format, int *p, va_list arg)
 int	ft_printf(const char *format, ...)
 {
 	va_list	arg;
-	int		*p;
+	int		p;
 	int		i;
-	int		j;
 
 	i = 0;
-	j = 0;
-	p = (int *)malloc(sizeof(int));
-	if (p == NULL)
-		return (0);
+	p = 0;
 	va_start(arg, format);
-	i = checkflag(i, format, p, arg);
+	i = checkflag(i, format, &p, arg);
 	va_end(arg);
 	free(p);
 	return (i);

@@ -6,7 +6,7 @@
 #    By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/29 15:29:03 by mjeyavat          #+#    #+#              #
-#    Updated: 2021/08/05 16:57:04 by mjeyavat         ###   ########.fr        #
+#    Updated: 2021/08/18 14:12:08 by mjeyavat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,4 +48,4 @@ clean:
 fclean: clean
 	rm -f $(NAME) ./libft/libft.a
 
-re: fclean all delout
+re: fclean all
