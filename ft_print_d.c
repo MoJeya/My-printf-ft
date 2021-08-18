@@ -6,7 +6,7 @@
 /*   By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:59:50 by mjeyavat          #+#    #+#             */
-/*   Updated: 2021/08/05 16:09:10 by mjeyavat         ###   ########.fr       */
+/*   Updated: 2021/08/18 15:16:31 by mjeyavat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ static int	countByts(int n)
 
 	len = 0;
 	num = n;
-	if (num == INT32_MIN)
-		return (INT32_MAX);
 	if (num == 0)
 		return (1);
 	else if (num < 0)
