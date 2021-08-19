@@ -6,7 +6,7 @@
 /*   By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:59:50 by mjeyavat          #+#    #+#             */
-/*   Updated: 2021/08/18 15:16:31 by mjeyavat         ###   ########.fr       */
+/*   Updated: 2021/08/19 11:12:56 by mjeyavat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,15 +42,15 @@ static int	countByts(int n)
 int	ft_conerCase(void)
 {
 	char	*s;
-	int		i;
+	int		length;
 
-	i = 0;
 	s = ft_strdup("-2147483648");
 	if (!s)
-		return (0);
+		return (-1);
 	ft_putstr_fd(s, 1);
+	length = ft_strlen(s);
 	free(s);
-	return (ft_strlen(s));
+	return (length);
 }
 
 int	ft_print_d(int n)
