@@ -6,7 +6,7 @@
 /*   By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:59:50 by mjeyavat          #+#    #+#             */
-/*   Updated: 2021/08/19 11:12:56 by mjeyavat         ###   ########.fr       */
+/*   Updated: 2021/08/19 11:48:37 by mjeyavat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int	ft_conerCase(void)
 	char	*s;
 	int		length;
 
+	length = 0;
 	s = ft_strdup("-2147483648");
 	if (!s)
 		return (-1);
