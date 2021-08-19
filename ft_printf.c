@@ -6,7 +6,7 @@
 /*   By: mjeyavat <mjeyavat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:00:08 by mjeyavat          #+#    #+#             */
-/*   Updated: 2021/08/19 11:10:29 by mjeyavat         ###   ########.fr       */
+/*   Updated: 2021/08/19 11:36:25 by mjeyavat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ static int	checkflag(int i, const char *format, int *p, va_list arg)
 				sub--;
 				setTyp(format[i], arg, p);
 			}
-			else
-				return (-1);
 		}
 		else
 			write(1, &format[i], 1);
